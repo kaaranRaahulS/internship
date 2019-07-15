@@ -14,4 +14,18 @@ import { Tab2Page } from './tab2.page';
   ],
   declarations: [Tab2Page]
 })
-export class Tab2PageModule {}
+export class Tab2PageModule {
+  names:any[];
+  images:any[];
+
+  constructor()
+  {
+    this.names=['Ac Service and Repair','RO or Water Purifier Repair',
+  'Washing machine Repair','Refrigirator Repair','Microwave Repair','Chimney Repair',
+'Laptop Repair'];
+
+this.images=["../../assets/png/1.png","../../assets/png/2.png","../../assets/png/3.png",
+"../../assets/png/4.png","../../assets/png/5.png","../../assets/png/6.png","../../assets/png/7.png",
+"../../assets/png/8.png"];
+  }
+}
