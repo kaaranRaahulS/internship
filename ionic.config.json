@@ -1,5 +1,7 @@
 {
   "name": "internship",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

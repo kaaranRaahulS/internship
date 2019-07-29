@@ -33,7 +33,12 @@
           <tr>
             <td>
                   <div text-center>
-                      <img src="../../assets/png/1.png" style="width:35%;" alt="img">
+                      <img src="../../assets/png/1.png" 
+                      style="width:35%;" 
+                      alt="img"
+                      [routerLink]="['/salonmen']"
+                      >
+                      <!-- (click)="salmen()" -->
                       <h6><strong>Salon at home for men</strong></h6>
                   </div>
                  
@@ -42,14 +47,14 @@
            </td>
            <td>
                   <div text-center>
-                     <img src="../../assets/png/2.png" style="width:35%;" alt="img">
+                     <img src="../../assets/png/2.png" style="width:35%;" alt="img" (click)="salwmen()">
                      <h6><strong> Salon at home for women </strong></h6>
                   </div>
             
            </td>
            <td>
                 <div text-center>
-                    <img src="../../assets/png/3.png" style="width:40%;" alt="img">
+                    <img src="../../assets/png/3.png" style="width:40%;" alt="img" (click)="massagehome()">
                     <h6> <strong>Massage at home</strong></h6>
                 </div>
             </td>
@@ -58,7 +63,7 @@
           <tr>
               <td>
                   <div text-center>
-                      <img src="../../assets/png/4.png" style="width:40%;" alt="img">
+                      <img src="../../assets/png/4.png" style="width:40%;" alt="img" (click)="eleccarplum()">
                       <h6><strong>Electrician , carpenter ,plumber</strong></h6>
                   </div>
 
@@ -66,7 +71,7 @@
               <td>
       
                   <div text-center>
-                      <img src="../../assets/png/5.png" style="width:35%;" alt="img">
+                      <img src="../../assets/png/5.png" style="width:35%;" alt="img" (click)="applandelec()">
                       <h6> <strong>  Appliances and electronics repair</strong></h6>
                   </div>
           
@@ -74,7 +79,8 @@
               <td>
       
                   <div text-center>
-                      <img src="../../assets/png/6.png" style="width:40%; height: 10%; ; margin-bottom: 25px" alt="img">
+                      <img src="../../assets/png/6.png" style="width:40%; height: 10%; ; margin-bottom: 25px" alt="img"
+                      (click)="clean()">
                       <p><strong> cleaning</strong></p>
                   </div>
                 
@@ -84,7 +90,7 @@
             <tr>
                 <td>
                     <div text-center>
-                        <img src="../../assets/png/7.png" style="width:30%;" alt="img">
+                        <img src="../../assets/png/7.png" style="width:30%;" alt="img" (click)="painting()">
                         <p><strong>painting</strong></p>
                     </div>
                    
@@ -92,14 +98,14 @@
                 </td>
                 <td>
                     <div text-center>
-                        <img src="../../assets/png/8.png" style="width:30%;" alt="img">
+                        <img src="../../assets/png/8.png" style="width:30%;" alt="img" (click)="pest()">
                           <p><strong>Pest Control</strong></p>
                     </div>
              
                 </td>
                 <td>
                     <div text-center>
-                        <img src="../../assets/png/9.png" style="width:30%; margin-top:20px" alt="img">
+                        <img src="../../assets/png/9.png" style="width:30%; margin-top:20px" alt="img" (click)="fitness()">
                         <p> <strong> Fitness and yoga  </strong></p>
                     </div>
               </tr>

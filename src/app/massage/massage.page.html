@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>massage</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let p of menus.massage" button (click)="forms(p.title)">
+          <ion-avatar>
+            <img [src]="[p.url]">
+          </ion-avatar>&nbsp;&nbsp;
+          <h6>{{ p.title }}</h6>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+
+
+

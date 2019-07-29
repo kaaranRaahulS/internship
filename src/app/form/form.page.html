@@ -1,0 +1,28 @@
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>form</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div text-center>
+    <h5>{{ tit }}</h5>
+  </div>
+<ion-input [(ngModel)]="username">Username : </ion-input>
+<ion-input [(ngModel)]="mail" type="Email">Email : </ion-input>
+<ion-select [(ngModel)]="country" placeholder="Select the country" (ionChange)="OnCountryChange($event)"> 
+  <ion-select-option *ngFor = "let p of countries" [value]="p" >
+    {{ p.name }}
+</ion-select-option>
+</ion-select>
+<div>
+    <ion-input type="text" [(ngModel)]="num">Number: {{ dialcode }}</ion-input>
+</div>
+<div text-center>
+  <ion-button color="danger" (click)="book()">Book</ion-button>
+</div>
+
+</ion-content>
